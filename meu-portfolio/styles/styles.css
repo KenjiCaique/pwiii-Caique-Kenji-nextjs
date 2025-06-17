@@ -216,7 +216,7 @@ header .social-icons a:hover {
     font-weight: bold;
     transition: all 0.3s;
     margin-top: 15px;
-
+}
 .github button:hover {
     background: #4a2c6f;
     color: white;
