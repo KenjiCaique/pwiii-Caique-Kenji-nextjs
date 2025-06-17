@@ -2,6 +2,7 @@
 import { useEffect } from 'react'
 import { FaGithub, FaInstagram } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
+import Image from "next/image";
 
 
 export default function Home() {
