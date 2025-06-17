@@ -1,0 +1,304 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9e4b7, #c2a2da);
+    color: #2f4f2f;
+    text-align: center;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    padding: 30px;
+    background: #f9e4b7;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #4a2c6f;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #e1306c;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #4a2c6f;
+}
+
+header .name {
+    font-size: 4.5em;
+    margin: 0;
+    line-height: 1;
+    text-align: left;
+    margin-top: 40px;
+    color: #4a2c6f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .profile-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 40px;
+    border: 4px solid #6a0dad;
+    transition: transform 0.3s;
+    margin-left: 1200px;
+}
+
+header .profile-image:hover {
+    transform: scale(1.1);
+}
+
+header .portfolio-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.3em;
+    margin: 0;
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+header .social-icons a {
+    margin-left: 15px;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: #4a2c6f;
+    transition: color 0.3s;
+}
+
+header .social-icons a:hover {
+    color: #e1306c;
+}
+
+.projects, .about, .github, .contact, footer {
+    padding: 40px;
+}
+
+.projects h2, .about h2, .github h2, .contact h2 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    color: #4a2c6f;
+    border-bottom: 2px solid #6a0dad;
+    display: inline-block;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #d8aaff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #4a2c6f;
+}
+
+.project-card button {
+    background: #6a0dad;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.project-card button:hover {
+    background: #4a2c6f;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid #6a0dad;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #4a2c6f;
+}
+
+.github {
+    text-align: center;
+}
+
+.github button {
+    background: none;
+    border: 2px solid #4a2c6f;
+    padding: 8px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #4a2c6f;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 15px;
+
+.github button:hover {
+    background: #4a2c6f;
+    color: white;
+}
+
+.about p {
+    text-align: justify;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+footer {
+    background: #2f4f2f;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .contacts {
+    margin-bottom: 15px;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: white;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #d8aaff;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        position: static;
+        margin: 20px 0;
+    }
+
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header .name {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header .profile-image {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
