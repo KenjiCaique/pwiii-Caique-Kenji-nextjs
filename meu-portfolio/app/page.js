@@ -1,6 +1,6 @@
 'use client'
 import { useEffect } from 'react'
-import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp, FaXTwitter, FaDiscord, FaYoutube, FaTiktok } from 'react-icons/fa6'
+import { FaGithub, FaInstagram } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
 
 
